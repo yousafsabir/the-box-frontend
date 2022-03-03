@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './layouts/navbar/Navbar'
 import Hero from './layouts/hero/Hero'
 import Reasons from './layouts/reasons/Reasons'
+import AboutUs from './layouts/aboutus/AboutUs'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <div className="InnerContainer">
         <Reasons />
+        <AboutUs />
       </div>
     </div>
   )

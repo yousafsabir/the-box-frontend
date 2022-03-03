@@ -1,0 +1,50 @@
+.AboutUsCont {
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 250px; /*including marin-top of services*/
+}
+
+.AboutUs {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 490px;
+  background: #2947a9;
+  color: #fff;
+  box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1),
+    0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+  border-radius: 2px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 60px;
+}
+.AboutUs h2 {
+  font-weight: bold;
+  font-size: 2.25rem; /*36px*/
+  line-height: 2.625rem; /*42px*/
+  margin-bottom: 40px;
+}
+
+.AboutUs p {
+  font-size: 1.25rem; /*20px*/
+  line-height: 1.4375rem; /*23px*/
+}
+.AboutUs p:first-of-type {
+  margin-bottom: 0.625rem; /*10px*/
+}
+.AboutUs p:last-of-type {
+  margin-bottom: 5.625rem; /*90px*/
+}
+
+.AboutUs button {
+  color: #2947a9;
+  font-size: 1.125rem; /*18px*/
+  line-height: 1.3125rem; /*21px*/
+  padding: 8px 10px;
+  border: 2px solid #2947a9;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 3.75rem; /*60px*/
+}

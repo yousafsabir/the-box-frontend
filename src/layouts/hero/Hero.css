@@ -4,6 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 .HeroInner {
   height: 646px;
@@ -18,4 +19,54 @@
   font-weight: 600;
   font-size: 4.5rem;
   line-height: 5.25rem;
+}
+
+/* Styling Absolute Box */
+.AbsoluteBox {
+  color: #fff;
+  background-color:#3559C7;
+  padding-top: 20px;
+  width: fit-content;
+  /* positioning */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  /* laoyut */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.AbsoluteBox h3 {
+  font-size: 1.25rem; /*20px*/
+  line-height: 1.375rem; /*23px*/
+  margin-bottom: 20px;
+}
+.AbsoluteBox p {
+  font-size: 1.5rem; /*24px*/
+  line-height: 1.75rem; /*28px*/
+}
+.ForMargin {
+  margin-bottom: 20px;
+}
+.AbsoluteBox .Bottom {
+  display: flex;
+}
+.Bottom button {
+  background-color: #292E3D;
+  color: #fff;
+  font-size: 1.125rem; /*18px*/
+  line-height: 1.3125rem; /*21px*/
+  border: none;
+  width: 220px;
+  padding: 4px 20px;
+  /* layouting button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.BottomBorder {
+  border-left: 1px solid #fff;
 }
