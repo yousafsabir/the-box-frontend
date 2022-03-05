@@ -1,5 +1,5 @@
 .StatsCont {
-  padding: 170px 25px 175px;
+  padding: 170px 25px 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
@@ -48,20 +48,44 @@
   left: calc(50% - 361px / 2 - 327.5px);
   top: 221px;
 }
+.StatsIcon1 {
+  position: absolute;
+  z-index: 25;
+  left: calc(50% - 79px / 2 - 501.5px);
+  top: 172px;
+}
 .Stats2 {
   z-index: 20;
-  left: calc(50% - 280px/2 - 68px);
-top: 122px;
+  left: calc(50% - 280px / 2 - 68px);
+  top: 122px;
+}
+.StatsIcon2 {
+  position: absolute;
+  z-index: 25;
+  left: calc(50% - 97px / 2 + 51.5px);
+  top: 103px;
 }
 .Stats3 {
   z-index: 15;
   left: calc(50% - 276px / 2 - 124px);
   top: 364px;
 }
+.StatsIcon3 {
+  position: absolute;
+  z-index: 25;
+  left: calc(50% - 93px / 2 - 11.5px);
+  top: 349px;
+}
 .Stats4 {
   z-index: 10;
   left: calc(50% - 333px / 2 - 292.5px);
   top: 469px;
+}
+.StatsIcon4 {
+  position: absolute;
+  z-index: 25;
+  left: calc(50% - 84px / 2 - 129px);
+  top: 582px;
 }
 .AbsoluteStats h2 {
   color: black;

@@ -1,6 +1,7 @@
 .ServicesCont {
-  padding: 45px 0 75px;
-  margin: 0 9.6078%;
+  background: #f6f8f7;
+  padding: 45px 16.608% 75px;
+  /* margin: 0 9.6078%; */
 }
 
 .ServicesCont h2 {
@@ -44,6 +45,6 @@
 }
 .ServicesCard h3 {
   font-weight: 600;
-font-size: 1.25rem; /*20px */
-line-height: 1.4375rem; /*23px*/
+  font-size: 1.25rem; /*20px */
+  line-height: 1.4375rem; /*23px*/
 }

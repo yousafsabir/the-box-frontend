@@ -1,0 +1,29 @@
+.AdCont {
+  color: #fff;
+  width: 100%;
+  padding: 100px 12.5% 100px 7.9861%;
+  background: url(../../assets/images/bg_ad.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 180px;
+}
+.AdCont button {
+  background: transparent;
+  padding: 16px 20px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.AdLeft h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
+
+.AdLeft p {
+  font-size: 24px;
+  line-height: 28px;
+}

@@ -1,4 +1,8 @@
 import React from 'react'
+import StatsIcon1 from '../../assets/images/icon_projects_completed.png'
+import StatsIcon2 from "../../assets/images/icon_happy_clients.png";
+import StatsIcon3 from "../../assets/images/icon_award_wins.png";
+import StatsIcon4 from "../../assets/images/icon_business_years.png"; 
 import './Stats.css'
 
 export default function Stats() {
@@ -14,6 +18,7 @@ export default function Stats() {
         </p>
         <button>Contact Us</button>
       </div>
+      {/* absolute boxes, their icons at the end */}
       <div className="AbsoluteStats Stats1">
         <h2>123</h2>
         <div className="InnerAbsolute">
@@ -42,6 +47,11 @@ export default function Stats() {
           <p>Years in Business</p>
         </div>
       </div>
+      {/* all icons of AbsoluteStats are here */}
+      <img src={StatsIcon1} className="StatsIcon1" />
+      <img src={StatsIcon2}className="StatsIcon2" />
+      <img src={StatsIcon3} className="StatsIcon3" />
+      <img src={StatsIcon4} className="StatsIcon4" />
     </div>
   );
 }
