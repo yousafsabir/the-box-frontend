@@ -16,13 +16,13 @@ export default function Hero() {
         <p className='ForMargin'>Architecture</p>
         <div className="Bottom">
           <button>
-            <img src={Vector_Left} alt="" />
+            <img src={Vector_Left} />
             <p>Back</p>
           </button>
           <div className="BottomBorder"></div>
           <button>
             <p>Next</p>
-            <img src={Vector_Right} alt="" />
+            <img src={Vector_Right} />
           </button>
         </div>
       </div>

@@ -1,29 +1,34 @@
 .AdCont {
-  color: #fff;
   width: 100%;
-  padding: 100px 12.5% 100px 7.9861%;
   background: url(../../assets/images/bg_ad.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px 0;
+  /* padding-top: 20.8%; */
+}
+.InnerAd {
+  color: #fff;
+  padding: 0 7.78%;
   display: flex;
-  gap: 180px;
+  align-items: center;
+  justify-content: space-between;
 }
-.AdCont button {
-  background: transparent;
-  padding: 16px 20px;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 2px;
-}
-
-.AdLeft h2 {
+.InnerAd h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   margin-bottom: 30px;
 }
-
-.AdLeft p {
+.InnerAd p {
   font-size: 24px;
   line-height: 28px;
+}
+.InnerAd button {
+  background-color: transparent;
+  color: #fff;
+  padding: 16px 20px;
+  font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+border: 2px solid #FFFFFF;
+border-radius: 2px;
 }
