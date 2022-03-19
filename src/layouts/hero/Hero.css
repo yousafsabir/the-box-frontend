@@ -1,7 +1,7 @@
 .HeroContainer {
   width: 100%;
   background: url(../../assets/images/bg_hero.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -24,7 +24,7 @@
 /* Styling Absolute Box */
 .AbsoluteBox {
   color: #fff;
-  background-color:#3559C7;
+  background-color: #3559c7;
   padding-top: 20px;
   width: fit-content;
   /* positioning */
@@ -54,7 +54,7 @@
   display: flex;
 }
 .Bottom button {
-  background-color: #292E3D;
+  background-color: #292e3d;
   color: #fff;
   font-size: 1.125rem; /*18px*/
   line-height: 1.3125rem; /*21px*/
