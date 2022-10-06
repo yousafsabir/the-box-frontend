@@ -1,0 +1,29 @@
+@font-face {
+    font-family: work-800;
+    src: url(./assets/fonts/WorkSans-ExtraBold.woff);
+}
+@font-face {
+    font-family: work-700;
+    src: url(./assets/fonts/WorkSans-Bold.woff);
+}
+@font-face {
+    font-family: work-600;
+    src: url(./assets/fonts/WorkSans-SemiBold.woff);
+}
+@font-face {
+    font-family: work-500;
+    src: url(./assets/fonts/WorkSans-Medium.woff);
+}
+@font-face {
+    font-family: work-400;
+    src: url(./assets/fonts/WorkSans-Regular.woff);
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+        font-family: work-400;
+    }
+}
