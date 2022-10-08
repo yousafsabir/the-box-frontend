@@ -1,0 +1,28 @@
+/* Fonts | TheBox */
+
+@font-face {
+    font-family: w-800;
+    src: url(fonts/WorkSans-ExtraBold.woff);
+}
+@font-face {
+    font-family: w-700;
+    src: url(fonts/WorkSans-Bold.woff);
+}
+@font-face {
+    font-family: w-600;
+    src: url(fonts/WorkSans-SemiBold.woff);
+}
+@font-face {
+    font-family: w-500;
+    src: url(fonts/WorkSans-Medium.woff);
+}
+@font-face {
+    font-family: w-400;
+    src: url(fonts/WorkSans-Regular.woff);
+}
+
+$work-800: w-800;
+$work-700: w-700;
+$work-600: w-600;
+$work-500: w-500;
+$work-400: w-400;
