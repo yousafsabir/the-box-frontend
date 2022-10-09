@@ -1,0 +1,12 @@
+@use '../abstracts/mixins';
+
+
+/* Fonts | TheBox */
+@for $i from 4 through 8 {
+    @include mixins.font-face("ws-#{$i}00", "fonts/worksans/ws-#{$i}00.woff");
+}
+
+$work-700: ws-700;
+$work-600: ws-600;
+$work-500: ws-500;
+$work-400: ws-400;

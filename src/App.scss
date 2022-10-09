@@ -1,11 +1,17 @@
-@use "./styles/abstracts/index" as abstracts;
+@use "./scss/abstracts";
+@use "./scss/base";
 
 .App {
     display: flex;
     justify-content: center;
     align-items: center;
     & h1 {
-        font-family: abstracts.$work-700;
-        color: abstracts.$primary;
+        font-family: base.$work-700;
+        color: map-get(abstracts.$neutral, 500);
+    }
+    @include abstracts.breakpoint(xl) {
+        & h1 {
+            color: map-get(abstracts.$neutral, 900);
+        }
     }
 }

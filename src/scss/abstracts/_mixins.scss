@@ -1,0 +1,46 @@
+/* For Creating media query breakpoints easily */
+
+$breakpoints: (
+    "xs": 400px,
+    "sm": 520px,
+    "rg": 640px,
+    "md": 768px,
+    "lg": 1024px,
+    "xl": 1280px,
+    "2xl": 1440px,
+);
+@mixin breakpoint($width, $type: min) {
+    @if map-has-key($breakpoints, $width) {
+        $width: map-get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin text-shorten($lines: 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines; /* specify number of lines here */
+    -webkit-box-orient: vertical;
+}
+
+@mixin antialias {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+@mixin font-face($name, $file) {
+    @font-face {
+        font-family: $name;
+        src: url($file);
+    }
+}
