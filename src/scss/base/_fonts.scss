@@ -1,12 +1,19 @@
-@use '../abstracts/mixins';
+// @use "../abstracts/mixins";
 
+// /* Fonts | TheBox */
+// @for $i from 4 through 8 {
+//     @include mixins.font-face("ws-#{$i}00", "fonts/worksans/ws-#{$i}00.woff");
+// }
 
-/* Fonts | TheBox */
-@for $i from 4 through 8 {
-    @include mixins.font-face("ws-#{$i}00", "fonts/worksans/ws-#{$i}00.woff");
+// $ws-700: ws-700;
+// $ws-600: ws-600;
+// $ws-500: ws-500;
+// $ws-400: ws-400;
+
+//* Above Fonts didn't included Italics so google fonts instead
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+    font-family: "Work Sans", sans-serif;
 }
-
-$work-700: ws-700;
-$work-600: ws-600;
-$work-500: ws-500;
-$work-400: ws-400;

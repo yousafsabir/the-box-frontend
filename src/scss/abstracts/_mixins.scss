@@ -44,3 +44,28 @@ $breakpoints: (
         src: url($file);
     }
 }
+
+@mixin flex($justify: center, $align: center, $gap: 0, $direction: row) {
+    $justifies: (
+        "center": center,
+        "between": space-between,
+        "around": space-around,
+        "evenly": space-evenly,
+    );
+    $aligns: (
+        "center": center,
+        "start": flex-start,
+        "end": flex-end,
+        "baseline": baseline,
+        "stretch": stretch,
+    );
+    $directions: (
+        "row": row,
+        "col": column,
+    );
+    display: flex;
+    flex-direction: map-get($directions, $direction);
+    justify-content: map-get($justifies, $justify);
+    align-items: map-get($aligns, $align);
+    gap: $gap + px;
+}
