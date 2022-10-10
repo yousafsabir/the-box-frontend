@@ -8,6 +8,7 @@
     & h1 {
         font-family: base.$work-700;
         color: map-get(abstracts.$neutral, 500);
+        font-size: abstracts.rem(72);
     }
     @include abstracts.breakpoint(xl) {
         & h1 {
