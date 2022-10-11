@@ -8,6 +8,7 @@
 
     & .container {
         max-width: 1216px;
+        padding-inline: 16px;
         margin-inline: auto;
         @include abs.flex(between, center);
 
@@ -17,6 +18,9 @@
             & h1 {
                 color: abs.$clr-primary;
                 font-size: abs.$h5;
+                @include abs.breakpoint(md, max) {
+                    display: none;
+                }
 
                 & span {
                     font-style: italic !important;
@@ -26,6 +30,12 @@
 
         & ul {
             @include abs.flex($gap: 50);
+            @include abs.breakpoint(lg, max) {
+                gap: 35px;
+            }
+            @include abs.breakpoint(rg, max) {
+                display: none;
+            }
 
             & li {
                 & a {
@@ -36,6 +46,15 @@
                 &:last-child a {
                     color: abs.$clr-secondary;
                 }
+            }
+        }
+
+        & .menu {
+            font-size: 32px;
+            color: map-get(abs.$clr-neutral, 700);
+            display: none;
+            @include abs.breakpoint(rg, max) {
+                display: block;
             }
         }
     }

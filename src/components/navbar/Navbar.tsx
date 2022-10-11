@@ -1,4 +1,5 @@
 import React from "react";
+import { MdMenu } from "react-icons/md";
 import "./Navbar.scss";
 
 const Navbar: React.FC = () => {
@@ -32,6 +33,7 @@ const Navbar: React.FC = () => {
                         <a href="/">Contact Us</a>
                     </li>
                 </ul>
+                <MdMenu className="menu" />
             </div>
         </nav>
     );
