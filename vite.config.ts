@@ -9,6 +9,7 @@ export default defineConfig({
         alias: {
             "@components": path.resolve(__dirname, "./src/components"),
             "@scss": path.resolve(__dirname, "./src/scss"),
+            "@pages": path.resolve(__dirname, "./src/pages"),
         },
     },
     plugins: [react()],
