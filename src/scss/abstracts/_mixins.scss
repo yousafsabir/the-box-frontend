@@ -51,6 +51,8 @@ $breakpoints: (
         "between": space-between,
         "around": space-around,
         "evenly": space-evenly,
+        "start": flex-start,
+        "end": flex-end,
     );
     $aligns: (
         "center": center,

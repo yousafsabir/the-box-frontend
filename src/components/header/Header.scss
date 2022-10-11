@@ -1,0 +1,67 @@
+@use "@scss/abstracts" as abs;
+
+.header {
+    position: relative;
+    & .header-container {
+        background-image: url(/images/header-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        aspect-ratio: 9 / 4;
+        @include abs.breakpoint(xl, max) {
+            height: 540px;
+        }
+        @include abs.flex($align: start, $direction: col);
+        & .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            & h2 {
+                color: map-get(abs.$clr-neutral, 800);
+                font-weight: 600;
+                font-size: abs.$h1;
+                line-height: 84px;
+            }
+        }
+    }
+
+    & .feature-box {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        padding-top: 20px;
+        @include abs.flex($justify: between, $align: stretch, $direction: col);
+        width: 416px;
+        height: 190px;
+        background-color: abs.$clr-primary;
+        color: abs.$clr-white;
+
+        & h3 {
+            font-weight: 700;
+            font-size: abs.$para-md;
+            text-align: center;
+        }
+        & p {
+            text-align: center;
+            font-size: abs.$para-lg;
+            line-height: 28px;
+        }
+
+        & .buttons {
+            display: flex;
+            & button {
+                flex-grow: 1;
+                border: none;
+                padding-block: 8px;
+                font-size: abs.$para-reg;
+                background-color: map-get(abs.$clr-neutral, 800);
+                @include abs.flex($gap: 10);
+            }
+            & div {
+                border-right: 1px solid abs.$clr-white;
+            }
+        }
+    }
+}

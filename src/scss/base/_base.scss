@@ -1,2 +1,9 @@
 @use "./fonts";
 @use "./reset";
+
+// Utility Class
+.container {
+    max-width: 1248px;
+    padding-inline: 16px;
+    margin-inline: auto;
+}
