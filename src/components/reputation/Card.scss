@@ -1,0 +1,19 @@
+@use "@scss/abstracts" as *;
+
+.reputation-card {
+    padding: 20px 20px 40px;
+    border: 1.4px solid map-get($clr-neutral, 100);
+    border-radius: 4px;
+    @include flex(start, stretch, 18, col);
+
+    & img {
+        width: 40px;
+        height: 40px;
+    }
+    & .heading {
+        color: map-get($clr-neutral, 700);
+    }
+    & .para {
+        color: map-get($clr-neutral, 400);
+    }
+}
