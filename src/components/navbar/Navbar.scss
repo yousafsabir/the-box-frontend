@@ -1,5 +1,4 @@
 @use "@scss/abstracts" as abs;
-@use "@scss/base" as base;
 
 .navbar {
     max-width: 100%;
@@ -7,9 +6,6 @@
     padding-block: 16px;
 
     & .container {
-        max-width: 1216px;
-        padding-inline: 16px;
-        margin-inline: auto;
         @include abs.flex(between, center);
 
         & .heading {
@@ -17,7 +13,6 @@
 
             & h1 {
                 color: abs.$clr-primary;
-                font-size: abs.$h5;
                 @include abs.breakpoint(md, max) {
                     display: none;
                 }
@@ -40,7 +35,6 @@
             & li {
                 & a {
                     color: map-get(abs.$clr-neutral, 900);
-                    font-size: abs.$para-reg;
                 }
 
                 &:last-child a {

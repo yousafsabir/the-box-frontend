@@ -1,0 +1,29 @@
+// Responsive Typography
+@use "@scss/abstracts" as *;
+
+.h1 {
+    font-size: $h1;
+    line-height: 84px;
+
+    @include breakpoint(lg, max) {
+        font-size: calc($h1 - 10px);
+        line-height: 68px;
+    }
+    @include breakpoint(rg, max) {
+        font-size: calc($h1 - 20px);
+        line-height: 50px;
+    }
+}
+.h5 {
+    font-size: $h5;
+}
+
+.para-lg {
+    font-size: $para-lg;
+}
+.para-md {
+    font-size: $para-md;
+}
+.para-reg {
+    font-size: $para-reg;
+}

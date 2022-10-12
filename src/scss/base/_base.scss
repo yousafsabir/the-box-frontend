@@ -1,2 +1,10 @@
 @use "./fonts";
 @use "./reset";
+@use "./typography";
+
+// Utility Class
+.container {
+    max-width: 1248px;
+    padding-inline: 16px;
+    margin-inline: auto;
+}

@@ -12,25 +12,35 @@ const Navbar: React.FC = () => {
                         alt="TheBox logo"
                         className="logo"
                     />
-                    <h1 className="text">
+                    <h1 className="text h5">
                         <span>The</span>Box
                     </h1>
                 </div>
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/" className="para-reg">
+                            Home
+                        </a>
                     </li>
                     <li>
-                        <a href="/">About Us</a>
+                        <a href="/" className="para-reg">
+                            About Us
+                        </a>
                     </li>
                     <li>
-                        <a href="/">Projects</a>
+                        <a href="/" className="para-reg">
+                            Projects
+                        </a>
                     </li>
                     <li>
-                        <a href="/">Services</a>
+                        <a href="/" className="para-reg">
+                            Services
+                        </a>
                     </li>
                     <li>
-                        <a href="/">Contact Us</a>
+                        <a href="/" className="para-reg">
+                            Contact Us
+                        </a>
                     </li>
                 </ul>
                 <MdMenu className="menu" />

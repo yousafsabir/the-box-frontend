@@ -1,0 +1,79 @@
+@use "@scss/abstracts" as abs;
+
+.header {
+    position: relative;
+    & .header-container {
+        background-image: url(/images/header-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        aspect-ratio: 9 / 4;
+        @include abs.breakpoint(xl, max) {
+            height: 540px;
+        }
+        @include abs.breakpoint(rg, max) {
+            height: 440px;
+        }
+        @include abs.breakpoint(sm, max) {
+            height: 400px;
+        }
+        @include abs.flex($align: start, $direction: col);
+        & .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            @include abs.breakpoint(1090px, max) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            & h2 {
+                color: map-get(abs.$clr-neutral, 800);
+                font-weight: 600;
+                padding-right: 40px;
+                @include abs.breakpoint(1170px, max) {
+                    padding-right: 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    & .feature-box {
+        margin-inline: auto;
+        padding-top: 20px;
+        @include abs.flex($justify: between, $align: stretch, $direction: col);
+        max-width: 416px;
+        height: 190px;
+        background-color: abs.$clr-primary;
+        color: abs.$clr-white;
+        @include abs.breakpoint(1090px) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        & h3 {
+            font-weight: 700;
+            text-align: center;
+        }
+        & p {
+            text-align: center;
+            line-height: 28px;
+        }
+
+        & .buttons {
+            display: flex;
+            & button {
+                flex-grow: 1;
+                border: none;
+                padding-block: 8px;
+                background-color: map-get(abs.$clr-neutral, 800);
+                @include abs.flex($gap: 10);
+            }
+            & div {
+                border-right: 1px solid abs.$clr-white;
+            }
+        }
+    }
+}
