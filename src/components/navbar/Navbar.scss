@@ -13,7 +13,6 @@
 
             & h1 {
                 color: abs.$clr-primary;
-                font-size: abs.$h5;
                 @include abs.breakpoint(md, max) {
                     display: none;
                 }
@@ -36,7 +35,6 @@
             & li {
                 & a {
                     color: map-get(abs.$clr-neutral, 900);
-                    font-size: abs.$para-reg;
                 }
 
                 &:last-child a {
