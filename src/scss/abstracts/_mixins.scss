@@ -45,7 +45,13 @@ $breakpoints: (
     }
 }
 
-@mixin flex($justify: center, $align: center, $gap: 0, $direction: row) {
+@mixin flex(
+    $justify: center,
+    $align: center,
+    $gap: 0,
+    $direction: row,
+    $wrap: false
+) {
     $justifies: (
         "center": center,
         "between": space-between,
@@ -70,4 +76,7 @@ $breakpoints: (
     justify-content: map-get($justifies, $justify);
     align-items: map-get($aligns, $align);
     gap: $gap + px;
+    @if ($wrap) {
+        flex-wrap: wrap;
+    }
 }

@@ -2,9 +2,14 @@
 @use "./reset";
 @use "./typography";
 
-// Utility Class
+// Utility Classes
 .container {
     max-width: 1248px;
+    padding-inline: 16px;
+    margin-inline: auto;
+}
+.container-sm {
+    max-width: 1052px;
     padding-inline: 16px;
     margin-inline: auto;
 }
