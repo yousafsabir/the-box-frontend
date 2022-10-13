@@ -12,10 +12,15 @@
     }
 
     & .card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+        @include flex($align: stretch, $wrap: true);
         gap: 72px;
         margin-bottom: 84px;
+
+        & article {
+            max-width: 280px;
+        }
 
         @include breakpoint(lg, max) {
             gap: 62px;
