@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@components/navbar/Navbar";
 import Header from "@components/header/Header";
 import Reputation from "@components/reputation/Reputation";
+import AboutUs from "@components/aboutUs/AboutUs";
 
 const Home: React.FC = () => {
     return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
             <Navbar />
             <Header />
             <Reputation />
+            <AboutUs />
         </div>
     );
 };
