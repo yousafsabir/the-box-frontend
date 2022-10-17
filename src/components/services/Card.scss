@@ -1,0 +1,40 @@
+@use "@scss/abstracts" as *;
+
+.service-card {
+    padding-block: 38px;
+    border-radius: 4px;
+    box-shadow: $shadow-reg;
+    @include flex($gap: 20, $direction: col);
+
+    & img {
+        width: 40px;
+        height: 40px;
+    }
+
+    & .line {
+        width: 60px;
+        height: 2px;
+        background-color: map-get($clr-neutral, 100);
+    }
+    & h3 {
+        font-weight: 600;
+        line-height: 23px;
+        color: $clr-primary;
+    }
+    &:nth-child(even) {
+        background-color: $clr-primary;
+        & h3 {
+            color: $clr-white;
+        }
+    }
+    @media only screen and (min-width: 669px) and (max-width: 1038px) {
+        &:nth-child(3) {
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        &:nth-child(2) {
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+    }
+}
