@@ -1,0 +1,25 @@
+@use "@scss/abstracts" as *;
+
+.services {
+    background-color: map-get($clr-neutral, 50);
+    & .container-sm {
+        padding-top: 44px;
+        padding-bottom: 74px;
+
+        & h2 {
+            color: map-get($clr-neutral, 800);
+            line-height: 42.23px;
+            margin-bottom: 36px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(min(100%, 270px), 1fr)
+            );
+            gap: 48px 98px;
+        }
+    }
+}
