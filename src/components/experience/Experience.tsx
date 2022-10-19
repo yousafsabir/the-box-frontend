@@ -12,6 +12,7 @@ const Experience: React.FC = () => {
                             <div></div>
                             <p className="para-lg">Happy Clients</p>
                         </div>
+                        <img src="/images/exp1.svg" alt="" />
                     </div>
                     <div className="card">
                         <h3 className="h1">123</h3>
@@ -19,6 +20,7 @@ const Experience: React.FC = () => {
                             <div></div>
                             <p className="para-lg">Projects Completed</p>
                         </div>
+                        <img src="/images/exp2.svg" alt="" />
                     </div>
                     <div className="card">
                         <h3 className="h1">37</h3>
@@ -26,6 +28,7 @@ const Experience: React.FC = () => {
                             <div></div>
                             <p className="para-lg">Award Win</p>
                         </div>
+                        <img src="/images/exp3.svg" alt="" />
                     </div>
                     <div className="card">
                         <h3 className="h1">30</h3>
@@ -33,7 +36,9 @@ const Experience: React.FC = () => {
                             <div></div>
                             <p className="para-lg">Years in Business</p>
                         </div>
+                        <img src="/images/exp4.svg" alt="" />
                     </div>
+                    {/* <img src="/images/Stats.png" alt="" /> */}
                 </div>
                 <div className="text">
                     <h2 className="h2">30 Years Experience</h2>
