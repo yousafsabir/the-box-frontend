@@ -1,0 +1,60 @@
+@use "@scss/abstracts" as *;
+
+.experience {
+    padding: 122px 0 100px;
+    & .container {
+        height: 500px;
+        & .stats {
+            & .card {
+                padding: 30px 50px 30px 30px;
+                box-shadow: $shadow-lg;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                & h3 {
+                    color: map-get($clr-neutral, 800);
+                    line-height: 84px;
+                    margin-bottom: 2px;
+                }
+                & .card-text {
+                    margin-left: 16px;
+                    @include flex($gap: 12, $justify: start);
+                    & div {
+                        width: 7px;
+                        height: 28px;
+                        background-color: $clr-secondary;
+                    }
+                    & p {
+                        color: map-get($clr-neutral, 500);
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        & .text {
+            & h2 {
+                color: $clr-primary;
+                line-height: 70px;
+                margin-bottom: 40px;
+            }
+            & p {
+                color: map-get($clr-neutral, 600);
+                line-height: 23px;
+                margin-bottom: 50px;
+            }
+            & button {
+                color: $clr-white;
+                line-height: 23px;
+                border: none;
+                background-color: $clr-primary;
+                padding: 16px 40px;
+            }
+        }
+        // positioning
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        & .stats {
+        }
+        & .text {
+        }
+    }
+}
