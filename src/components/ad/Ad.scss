@@ -1,0 +1,33 @@
+@use "@scss/abstracts" as *;
+
+.ad-section {
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("/images/ad.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    & .container {
+        min-height: 300px;
+        color: $clr-white;
+        @include flex($justify: between);
+
+        & .text {
+            & h2 {
+                line-height: 42px;
+                margin-bottom: 30px;
+            }
+        }
+        & .cta {
+            & button {
+                padding: 16px 20px;
+                background-color: transparent;
+                border: 1px solid white;
+            }
+        }
+    }
+}
