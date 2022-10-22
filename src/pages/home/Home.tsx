@@ -5,6 +5,7 @@ import Reputation from "@components/reputation/Reputation";
 import AboutUs from "@components/aboutUs/AboutUs";
 import Services from "@components/services/Services";
 import Experience from "@components/experience/Experience";
+import Ad from "@components/ad/Ad";
 
 const Home: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
             <AboutUs />
             <Services />
             <Experience />
+            <Ad />
         </div>
     );
 };
