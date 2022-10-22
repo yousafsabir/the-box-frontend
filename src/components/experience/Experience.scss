@@ -83,6 +83,23 @@
         // positioning
         display: grid;
         grid-template-columns: 7fr 3fr;
+        @include breakpoint(950px, max) {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            & .stats {
+                min-height: 505px;
+            }
+            & .text {
+                text-align: center;
+                & h2 {
+                    line-height: 50px;
+                }
+                & p {
+                    max-width: 40ch;
+                    margin-inline: auto;
+                }
+            }
+        }
         & .stats {
             position: relative;
             & .card {
