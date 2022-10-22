@@ -4,6 +4,7 @@ import Header from "@components/header/Header";
 import Reputation from "@components/reputation/Reputation";
 import AboutUs from "@components/aboutUs/AboutUs";
 import Services from "@components/services/Services";
+import Experience from "@components/experience/Experience";
 
 const Home: React.FC = () => {
     return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
             <Reputation />
             <AboutUs />
             <Services />
+            <Experience />
         </div>
     );
 };

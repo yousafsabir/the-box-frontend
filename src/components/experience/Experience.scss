@@ -1,0 +1,155 @@
+@use "@scss/abstracts" as *;
+
+.experience {
+    padding: 122px 0 100px;
+    & .container {
+        height: 500px;
+        & .stats {
+            & .card {
+                padding: 30px;
+                box-shadow: $shadow-lg;
+                background-color: $clr-white;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                position: relative;
+                & h3 {
+                    color: map-get($clr-neutral, 800);
+                    line-height: 84px;
+                    margin-bottom: 2px;
+                }
+                & .card-text {
+                    margin-left: 16px;
+                    @include flex($gap: 12, $justify: start);
+                    & div {
+                        width: 7px;
+                        height: 28px;
+                        background-color: $clr-secondary;
+                    }
+                    & p {
+                        color: map-get($clr-neutral, 500);
+                        line-height: 24px;
+                    }
+                }
+                & img {
+                    position: absolute;
+                }
+            }
+        }
+        & .text {
+            padding-top: 50px;
+            padding-bottom: 78px;
+            & h2 {
+                color: $clr-primary;
+                line-height: 70px;
+                margin-bottom: 40px;
+            }
+            & p {
+                color: map-get($clr-neutral, 600);
+                line-height: 23px;
+                margin-bottom: 50px;
+            }
+            & button {
+                color: $clr-white;
+                line-height: 23px;
+                border: none;
+                background-color: $clr-primary;
+                padding: 16px 40px;
+            }
+        }
+        // positioning
+        @include breakpoint(610px) {
+            display: grid;
+            grid-template-columns: 7fr 3fr;
+
+            & .stats {
+                position: relative;
+                & .card {
+                    position: absolute;
+                    padding-right: 60px;
+                }
+                & .card:nth-child(1),
+                & .card:nth-child(3) {
+                    z-index: 10;
+                }
+                & .card:nth-child(2),
+                & .card:nth-child(4) {
+                    z-index: 5;
+                }
+                & .card:nth-child(1) {
+                    top: 0%;
+                    left: 45%;
+                }
+                & .card:nth-child(2) {
+                    top: 23%;
+                    left: 10%;
+                }
+                & .card:nth-child(3) {
+                    top: 54%;
+                    left: 38%;
+                }
+                & .card:nth-child(4) {
+                    top: 70%;
+                    left: 15%;
+                }
+                & .card:nth-child(1) {
+                    & img {
+                        top: 0%;
+                        left: 77%;
+                    }
+                }
+                & .card:nth-child(2) {
+                    & img {
+                        top: -18%;
+                        left: -10%;
+                    }
+                }
+                & .card:nth-child(3) {
+                    & img {
+                        top: 4%;
+                        left: 72%;
+                    }
+                }
+                & .card:nth-child(4) {
+                    & img {
+                        top: 77%;
+                        left: 87%;
+                    }
+                }
+            }
+        }
+        @include breakpoint(950px, max) {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            & .stats {
+                min-height: 505px;
+            }
+            & .text {
+                text-align: center;
+                & h2 {
+                    line-height: 50px;
+                }
+                & p {
+                    max-width: 40ch;
+                    margin-inline: auto;
+                }
+            }
+        }
+        @include breakpoint(610px, max) {
+            & .stats {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                & .card {
+                    position: relative;
+                    z-index: 0;
+                    & img {
+                        top: -5% !important;
+                        right: 10% !important;
+                        z-index: 10;
+                    }
+                }
+            }
+        }
+    }
+}
