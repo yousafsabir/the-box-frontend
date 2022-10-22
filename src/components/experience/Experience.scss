@@ -3,7 +3,7 @@
 .experience {
     padding: 122px 0 100px;
     & .container {
-        height: 500px;
+        min-height: 500px;
         & .stats {
             & .card {
                 padding: 30px;
@@ -37,7 +37,6 @@
         }
         & .text {
             padding-top: 50px;
-            padding-bottom: 78px;
             & h2 {
                 color: $clr-primary;
                 line-height: 70px;
@@ -115,6 +114,11 @@
                         left: 87%;
                     }
                 }
+            }
+        }
+        @include breakpoint(950px) {
+            & .text {
+                padding-bottom: 78px;
             }
         }
         @include breakpoint(950px, max) {
