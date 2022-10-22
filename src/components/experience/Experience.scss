@@ -34,30 +34,6 @@
                     position: absolute;
                 }
             }
-            & .card:nth-child(1) {
-                & img {
-                    top: 0%;
-                    left: 77%;
-                }
-            }
-            & .card:nth-child(2) {
-                & img {
-                    top: -18%;
-                    left: -10%;
-                }
-            }
-            & .card:nth-child(3) {
-                & img {
-                    top: 4%;
-                    left: 72%;
-                }
-            }
-            & .card:nth-child(4) {
-                & img {
-                    top: 77%;
-                    left: 87%;
-                }
-            }
         }
         & .text {
             padding-top: 50px;
@@ -81,8 +57,66 @@
             }
         }
         // positioning
-        display: grid;
-        grid-template-columns: 7fr 3fr;
+        @include breakpoint(610px) {
+            display: grid;
+            grid-template-columns: 7fr 3fr;
+
+            & .stats {
+                position: relative;
+                & .card {
+                    position: absolute;
+                    padding-right: 60px;
+                }
+                & .card:nth-child(1),
+                & .card:nth-child(3) {
+                    z-index: 10;
+                }
+                & .card:nth-child(2),
+                & .card:nth-child(4) {
+                    z-index: 5;
+                }
+                & .card:nth-child(1) {
+                    top: 0%;
+                    left: 45%;
+                }
+                & .card:nth-child(2) {
+                    top: 23%;
+                    left: 10%;
+                }
+                & .card:nth-child(3) {
+                    top: 54%;
+                    left: 38%;
+                }
+                & .card:nth-child(4) {
+                    top: 70%;
+                    left: 15%;
+                }
+                & .card:nth-child(1) {
+                    & img {
+                        top: 0%;
+                        left: 77%;
+                    }
+                }
+                & .card:nth-child(2) {
+                    & img {
+                        top: -18%;
+                        left: -10%;
+                    }
+                }
+                & .card:nth-child(3) {
+                    & img {
+                        top: 4%;
+                        left: 72%;
+                    }
+                }
+                & .card:nth-child(4) {
+                    & img {
+                        top: 77%;
+                        left: 87%;
+                    }
+                }
+            }
+        }
         @include breakpoint(950px, max) {
             grid-template-columns: 1fr;
             gap: 4rem;
@@ -100,38 +134,22 @@
                 }
             }
         }
-        & .stats {
-            position: relative;
-            & .card {
-                position: absolute;
-                padding-right: 60px;
+        @include breakpoint(610px, max) {
+            & .stats {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                & .card {
+                    position: relative;
+                    z-index: 0;
+                    & img {
+                        top: -5% !important;
+                        right: 10% !important;
+                        z-index: 10;
+                    }
+                }
             }
-            & .card:nth-child(1),
-            & .card:nth-child(3) {
-                z-index: 10;
-            }
-            & .card:nth-child(2),
-            & .card:nth-child(4) {
-                z-index: 5;
-            }
-            & .card:nth-child(1) {
-                top: 0%;
-                left: 45%;
-            }
-            & .card:nth-child(2) {
-                top: 23%;
-                left: 10%;
-            }
-            & .card:nth-child(3) {
-                top: 54%;
-                left: 38%;
-            }
-            & .card:nth-child(4) {
-                top: 70%;
-                left: 15%;
-            }
-        }
-        & .text {
         }
     }
 }
