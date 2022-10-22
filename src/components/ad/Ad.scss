@@ -21,12 +21,28 @@
                 line-height: 42px;
                 margin-bottom: 30px;
             }
+            & p > span {
+                text-decoration: underline;
+            }
         }
         & .cta {
             & button {
                 padding: 16px 20px;
+                margin-left: 20px;
                 background-color: transparent;
                 border: 1px solid white;
+            }
+        }
+        @include breakpoint(sm, max) {
+            min-height: 450px;
+            @include flex($direction: col, $gap: 20);
+            & .text {
+                text-align: center;
+            }
+            & .cta {
+                & button {
+                    margin-left: 0px;
+                }
             }
         }
     }
