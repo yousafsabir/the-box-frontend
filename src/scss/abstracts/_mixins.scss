@@ -70,6 +70,8 @@ $breakpoints: (
     $directions: (
         "row": row,
         "col": column,
+        "row-rev": row-reverse,
+        "col-rev": column-reverse,
     );
     display: flex;
     flex-direction: map-get($directions, $direction);
