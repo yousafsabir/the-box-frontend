@@ -46,6 +46,14 @@
             }
         }
 
+        @include breakpoint(sm, max) {
+            & .portrait {
+                & img {
+                    min-height: 320px;
+                    object-position: center;
+                }
+            }
+        }
         & .text {
             padding: 40px 50px 60px;
             color: $clr-white;
