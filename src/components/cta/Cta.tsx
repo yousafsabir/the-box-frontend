@@ -13,7 +13,15 @@ const Cta: React.FC = () => {
                 <div className="input-grid">
                     <input type="text" placeholder="Your Name*" />
                     <input type="text" placeholder="Email*" />
-                    <input type="text" placeholder="Reason for Contacting*" />
+                    {/* <input type="text" placeholder="Reason for Contacting*" /> */}
+                    <div className="dropdown">
+                        <select name="" id="">
+                            <option value="0">Reason for Contacting*</option>
+                            <option value="1">Reason 1</option>
+                            <option value="2">Reason 2</option>
+                        </select>
+                        <img src="/images/icon-dropdown.svg" alt="" />
+                    </div>
                     <input type="text" placeholder="Phone" />
                 </div>
                 <textarea
