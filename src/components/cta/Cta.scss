@@ -1,0 +1,71 @@
+@use "@scss/abstracts" as *;
+
+.cta {
+    padding: 60px 16px;
+    background-color: map-get($clr-neutral, 50);
+    & .cta-container {
+        max-width: 592px;
+        margin: 0 auto;
+        @include flex($justify: start, $align: stretch, $direction: col);
+
+        & h2,
+        & p {
+            color: map-get($clr-neutral, 800);
+            text-align: center;
+        }
+
+        & h2 {
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
+        & p {
+            margin-bottom: 38px;
+        }
+
+        & .input-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(min(100%, 280px), 1fr)
+            );
+            gap: 20px 32px;
+            margin-bottom: 20px;
+        }
+
+        & .textarea {
+            width: 100% !important;
+            height: 135px !important;
+            margin-bottom: 8px;
+        }
+
+        & .textarea,
+        & input {
+            padding: 7px 8px;
+            background-color: $clr-white;
+            border: 1px solid map-get($clr-neutral, 100);
+            border-radius: 4px;
+            outline: none;
+        }
+        & .textarea:focus,
+        & input:focus {
+            box-shadow: 0px 0px 0px 3px #697ec3, -0px -0px 0px 3px #697ec3;
+        }
+
+        & span {
+            margin-bottom: 28px;
+        }
+
+        & .estarric {
+            color: $clr-red;
+        }
+
+        & button {
+            border: none;
+            background-color: $clr-primary;
+            color: $clr-white;
+            align-self: center;
+            padding: 16px 104px;
+            font-weight: 600;
+        }
+    }
+}
