@@ -1,0 +1,107 @@
+@use "@scss/abstracts" as *;
+
+.footer {
+    & .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 85px;
+        padding-bottom: 80px;
+        & .left {
+            place-self: start start;
+            & .info {
+                margin-bottom: 32px;
+                @include flex(start, start, 32, col);
+                & div {
+                    @include flex(start, baseline);
+                    & p {
+                        font-size: $para-md;
+                        color: map-get($clr-neutral, 800);
+                    }
+                    & p:first-child {
+                        color: $clr-primary;
+                    }
+                }
+                & div:first-child {
+                    gap: 16px;
+                }
+                & div:nth-child(2) {
+                    gap: 34px;
+                }
+                & div:last-child {
+                    gap: 42px;
+                }
+            }
+            & .heading {
+                @include flex($justify: start, $gap: 14);
+
+                & h1 {
+                    color: $clr-primary;
+
+                    & span {
+                        font-style: italic !important;
+                    }
+                }
+            }
+        }
+
+        & .right {
+            place-self: start end;
+
+            & p {
+                font-size: $para-md;
+                color: $clr-primary;
+                margin-bottom: 20px;
+            }
+
+            & .footer-cta {
+                margin-bottom: 42px;
+                @include flex(start, baseline, 8);
+                & * {
+                    border-radius: 4px;
+                    height: 41px;
+                }
+                & input {
+                    display: inline-block;
+                    width: 240px;
+                    padding: 0 8px;
+                    border: 1px solid map-get($clr-neutral, 100);
+                }
+                & button {
+                    border: none;
+                    padding: 0 24px;
+                    color: $clr-white;
+                    background-color: $clr-secondary;
+                }
+            }
+            & .socials {
+                @include flex(start, baseline, 20);
+            }
+        }
+        @include breakpoint(md, max) {
+            grid-template-columns: 1fr;
+            & .left {
+                grid-row-start: 2;
+            }
+            & .right {
+                grid-row-start: 1;
+                place-self: start;
+                margin-bottom: 32px;
+            }
+        }
+        @include breakpoint(420px, max) {
+            & .right {
+                & .footer-cta {
+                    @include flex(start, baseline, 8, $wrap: true);
+                    & input {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+    & .copyright {
+        background-color: $clr-primary;
+        color: $clr-white;
+        padding: 23px 0;
+    }
+}

@@ -13,7 +13,7 @@ const Ad: React.FC = () => {
                         Just one call away: <span>+84 1102 2703</span>
                     </p>
                 </div>
-                <div className="cta">
+                <div className="ad-cta">
                     <button className="para-reg">Get your consultation</button>
                 </div>
             </div>

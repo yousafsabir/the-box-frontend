@@ -8,6 +8,7 @@ import Experience from "@components/experience/Experience";
 import Ad from "@components/ad/Ad";
 import Projects from "@components/projects/Projects";
 import Cta from "@components/cta/Cta";
+import Footer from "@components/footer/Footer";
 
 const Home: React.FC = () => {
     return (
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
             <Ad />
             <Projects />
             <Cta />
+            <Footer />
         </div>
     );
 };
