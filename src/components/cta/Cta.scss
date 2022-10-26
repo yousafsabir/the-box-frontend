@@ -52,6 +52,7 @@
         }
 
         & .textarea {
+	    resize: none;
             width: 100% !important;
             height: 135px !important;
             margin-bottom: 8px;
