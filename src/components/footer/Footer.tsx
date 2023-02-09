@@ -75,6 +75,15 @@ const Footer: React.FC = () => {
                     <p className="caption">
                         TheBox Company © 2022. All Rights Reserved
                     </p>
+                    <p className="caption">
+                        Developed with 💖 & 🔥 by{" "}
+                        <a
+                            href="https://linkedin.com/in/yousafsabir"
+                            target="_blank"
+                        >
+                            <span className="myself">M.Yousaf</span>
+                        </a>
+                    </p>
                 </div>
             </section>
         </footer>
