@@ -1,4 +1,4 @@
-@function rem($px) {
-    $result: calc($px/16);
-    @return $result + rem;
+$font-size-default: 16px;
+@function pxToRem($pxValue) {
+  @return math.div(stripUnit($pxValue), stripUnit($font-size-default)) + rem;
 }
