@@ -2,3 +2,10 @@ $font-size-default: 16px;
 @function pxToRem($pxValue) {
   @return math.div(stripUnit($pxValue), stripUnit($font-size-default)) + rem;
 }
+
+@function stripUnit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
